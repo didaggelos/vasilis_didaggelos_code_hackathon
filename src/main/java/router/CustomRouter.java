@@ -37,6 +37,7 @@ public class CustomRouter {
         //Patient
         router.attach("/patientSettings/{id}", PatientSettingsResource.class);
         router.attach("/patient/{patientId}/carb/{carbId}", PatientCarbResource.class);
+       // we have problem
         router.attach("/patient/{patientId}/carb/", PatientCarbListResource.class);
         router.attach("/patient/{patientId}/glucose/{glucoseId}", PatientGlucoseResource.class);
         router.attach("/patient/{patientId}/glucose/", PatientGlucoseListResource.class);

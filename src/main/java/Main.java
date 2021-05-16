@@ -40,7 +40,7 @@ public class Main extends Application {
         Router publicRouter = customRouter.publicResources();
 
         // Create the api router, protected by a patient guard
-
+//controller
         ChallengeAuthenticator guard = shield.createApiGuard();
         Router userRouter = customRouter.protectedResources();
         guard.setNext(userRouter);

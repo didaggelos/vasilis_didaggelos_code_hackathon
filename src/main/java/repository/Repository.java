@@ -40,6 +40,10 @@ public abstract class Repository<T, K> {
         }
     }
 
+    // να κανει paging
+
+
+
     public List<T> findAll() {
         try {
             return entityManager.createQuery("from " + getClassName()).getResultList();
